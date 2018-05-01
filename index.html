@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Octagon</title>
+		<style>
+			body {
+				text-align: center;
+			}
+
+			canvas {
+				margin-top: 20px;
+			}
+
+			label {
+				display: block;
+			}
+		</style>
+	</head>
+	<body>
+		<label>Side&nbsp;Length&nbsp;<input id="sidelen" type="number" min="1" value="50" onchange="sidelenChange();"></label>
+		<label>Angle&nbsp;(degrees)&nbsp;<input id="rotation" type="number" value="0" step="0.1" onchange="rotationChange();"></label>
+		<label>Color&nbsp;<input id="color" type="color" value="#FF0000" onchange="colorChange();"></label>
+		<label>XSTEP&nbsp;<input id="xstep" type="number" value="92.38795325112868" step="0.1" onchange="xstepChange();"></label>
+		<label>YSTEP&nbsp;<input id="ystep" type="number" value="92.38795325112868" step="0.1" onchange="ystepChange();"></label>
+		<br>
+		<canvas width="500" height="500" id="canvas"></canvas>
+		<script src="js/octo.js"></script>
+	</body>
+</html>
